@@ -13,7 +13,7 @@ The project is a voting application with the following components:
 
 - `web` — A frontend Vue application
   --
-  - Use node version 10 to build and test the app.
+  - Use `node:10-alpine` to build and test the app.
   - Run `npm install` to download all the node modules.
   - Run `npm run test:unit` to run the unit test cases.
   - Run `npm run serve` to start the application.
