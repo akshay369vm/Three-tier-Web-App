@@ -28,6 +28,7 @@ The project is a voting application with the following components:
   - Define our command to be run when launching the container
      `"gunicorn", "app:app", "-b", "0.0.0.0:8080", "--log-file", "-", "--access-logfile", "-", "--workers", "4", "--keep-alive", "0"`
   - Add environment variables for `PGDATABASE: postgres, PGUSER: postgres, PGPASSWORD: postgres`
+  - Post build run python integration test using `python3 test.py`
 - `db` — A Postgres database
   --
   - Create the database using `postgres:12.4-alpine`.
